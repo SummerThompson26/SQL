@@ -1,0 +1,21 @@
+CREATE TABLE store (id integer primary key, name text, price integer, location integer, rating integer);
+
+INSERT INTO store VALUES (1, "chocolate chip" ,2,1,9);
+INSERT INTO store VALUES (2, "devils food cake", 3, 1, 10);
+INSERT INTO store VALUES (3, "vanilla", 2, 1, 7);
+INSERT INTO store VALUES (4, "chocolate", 2, 2, 8);
+INSERT INTO store VALUES (5, "strawberry", 2, 2, 9);
+INSERT INTO store VALUES (6, "snickerdoodle", 3, 2, 10);
+INSERT INTO store VALUES (7, "oatmeal", 3, 3, 6);
+INSERT INTO store VALUES (8, "shortbread", 4, 3, 10);
+INSERT INTO store VALUES (9, "macaron", 5, 3, 11);
+INSERT INTO store VALUES (10, "biscotti", 4, 4, 4);
+INSERT INTO store VALUES (11, "sugar", 3, 4, 7);
+INSERT INTO store VALUES (12, "gingerbread", 4, 4, 6);
+INSERT INTO store VALUES (13, "raisin", 2, 5, 2);
+INSERT INTO store VALUES (14, "frosted", 4, 5, 4);
+INSERT INTO store VALUES (15, "mystery", 5, 5 , 8);
+
+SELECT * from store ORDER BY price; 
+SELECT SUM (price) from store;
+SELECT * from store ORDER by price asc; 
